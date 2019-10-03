@@ -12,7 +12,7 @@
             <div class="nav-list">
                 <ul>
                     <li v-for="(item,index) in navList" :key="index"
-                        @click="toMoving(index)">
+                        @touchstart="toMoving(index)">
                         <div class="nav-img">
                             <img :src="item.img" alt="">
                         </div>

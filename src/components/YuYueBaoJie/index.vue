@@ -223,7 +223,6 @@
     .address-cell-wrapper .address-cell-wrapper-item {
         text-align: left;
         width: 80%;
-        white-space: nowrap;
         overflow: hidden;
     }
     .address-cell-wrapper .address-cell-wrapper-item .double{
@@ -232,8 +231,36 @@
     }
     .address-cell-wrapper .address-cell-wrapper-item .blur-wrapper{
         position: relative;
+        width: 100%;
         font-size: 16px;
         font-weight: 700;
+        white-space: nowrap;
+        animation: marquee 10s linear infinite;
+        box-sizing: border-box;
+    }
+    .address-cell-wrapper .address-cell-wrapper-item .blur-wrapper::before{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 1px;
+        background: linear-gradient(to left,rgba(250,250,250,0),rgba(250,250,250,1));
+    }
+    @media screen and (max-width: 320px){
+        .address-cell-wrapper .address-cell-wrapper-item,
+        .address-cell-wrapper .address-cell-wrapper-item .blur-wrapper{
+            font-size: 14px;
+        }
+    }
+    @keyframes marquee {
+        0% {
+            text-indent: 0;
+        }
+        100% {
+            text-indent: -8.8em;
+        }
     }
     .order-confirm-container .van-cell>p{
         flex: 1;

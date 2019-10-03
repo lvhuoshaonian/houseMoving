@@ -98,7 +98,7 @@
                     msg = '请输入搬到地址'
                     flag = false
                 }
-                if(!flag){
+                if(flag){
                     Toast(msg)
                 }else{
                     this.$router.push("/YuYueMoving")

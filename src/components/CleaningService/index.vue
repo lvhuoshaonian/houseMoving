@@ -94,7 +94,7 @@
                     msg = '请输入上门时间'
                     flag = false
                 }
-                if(!flag){
+                if(flag){
                     Toast(msg)
                 }else{
                     this.$router.push("/YuYueBaoJie")
