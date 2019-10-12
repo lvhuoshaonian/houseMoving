@@ -34,7 +34,7 @@
                 <div class="price-youhui">
                     <p class="price">￥{{item.price}}</p>
                     <p class="youhui" v-if="item.youhui !=='' ">
-                        {{item.youhui}}
+                        优惠减免少￥{{item.youhui}}
                     </p>
                 </div>
                 <p>

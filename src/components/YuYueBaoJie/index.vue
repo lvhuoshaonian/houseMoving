@@ -178,7 +178,6 @@
         methods:{
             business(data){
                 this.businessInfo = data
-                console.log(data)
             }
         }
     }
