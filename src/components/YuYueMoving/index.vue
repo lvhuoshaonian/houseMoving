@@ -1,6 +1,6 @@
 <template>
     <div class="van-pull-refresh">
-        <OrderHead businessName="蓝犀牛搬家" :businessLogo="logo"/>
+        <OrderHead index="0" @business="business"/>
         <section class="details-container">
             <div class="details-info">
                 <div class="move-to-container border1">
@@ -20,13 +20,14 @@
                 <div class="predict-cost">
                     <div class="predict-title">
                         <p class="order-font-2">预估报价</p>
-                        <p class="order-font-3">￥173</p>
+                        <p class="order-font-3">￥{{businessInfo.price}}</p>
                     </div>
                     <div class="predict-cost-item">
                         <p class="order-font-2">优惠减免</p>
                         <p class="order-font-3">
-                            <span>暂无可用，去兑换</span>
-                            <i class="iconfont icontiaozhuanqianwangyoujiantouxiangyouxiayibuxianxing">
+                            <span v-if="businessInfo.youhui === ''">暂无可用，去兑换</span>
+                            <span v-else>优惠减免{{businessInfo.youhui}}</span>
+                            <i class="iconfont iconxiangyou">
                             </i>
                         </p>
                     </div>
@@ -34,7 +35,7 @@
                         <p class="order-font-2"></p>
                         <p class="order-font-3">
                             <span>预估费用</span>
-                            <strong class="price"><span>￥</span>173</strong>
+                            <strong class="price"><span>￥</span>{{businessInfo.price}}</strong>
                         </p>
                     </div>
                 </div>
@@ -114,7 +115,7 @@
                 <p class="order-font-1">发票信息</p>
                 <div class="bill-tip">
                     <span >如需开具发票请联系商家客服</span>
-                    <i class="iconfont icontiaozhuanqianwangyoujiantouxiangyouxiayibuxianxing"></i>
+                    <i class="iconfont iconxiangyou"></i>
                 </div>
             </div>
             <div class="evaluation">
@@ -204,7 +205,12 @@
         },
         data(){
             return{
-                logo:require("../../assets/lanxiniu.png"),
+                businessInfo:{
+                    businessName:'蓝犀牛搬家',
+                    businessLogo:require("../../assets/lanxiniu.png"),
+                    price:'89',
+                    youhui:'优惠卷减免￥10'
+                },
                 jiesaoList:[
                     {
                         img:require("../../assets/lxn-1.png"),
@@ -218,6 +224,11 @@
                     }
 
                 ],
+            }
+        },
+        methods:{
+            business(data){
+                this.businessInfo = data
             }
         }
     }

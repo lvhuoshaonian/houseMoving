@@ -2,10 +2,10 @@
     <div class="order-header-container">
         <header class="order-details-supply">
             <div class="price-supply">
-                <img :src="businessLogo" alt="">
+                <img :src="businessList[activeIndex].businessLogo" alt="">
             </div>
             <div class="price-supply-content">
-                <p>{{businessName}}</p>
+                <p>{{businessList[activeIndex].businessName}}</p>
                 <div class="van-rate">
                     <i v-for="item in 5" :key="item"
                        class="iconfont iconstar-award"></i>
@@ -23,20 +23,53 @@
 </template>
 
 <script>
+    import {messageBox} from "../MsgBox/msgJs";
+
     export default {
         name: "orderHeader",
-        props:['businessName','businessLogo'],
+        props:['index'],
         data(){
             return{
-                business:{
-                    businessName:'',
-                    businessLogo:'',
-                    price:''
-                }
+                activeIndex:0,
+                businessList:[
+                    {
+                        businessName:'蓝犀牛搬家',
+                        businessLogo:require("../../assets/lanxiniu.png"),
+                        price:'89',
+                        youhui:'10'
+                    },
+                    {
+                        businessName:'自如搬家',
+                        businessLogo:require("../../assets/ziru-Logo.png"),
+                        price:'96',
+                        youhui:''
+                    },
+                    {
+                        businessName:'四通搬家',
+                        businessLogo:require("../../assets/stone.png"),
+                        price:'218',
+                        youhui:""
+                    },
+                ]
             }
         },
         created(){
-
+            this.activeIndex = this.index
+        },
+        methods:{
+            switchBusiness(){
+                let that = this
+                messageBox({
+                    list:that.businessList,
+                    activeIndex : that.activeIndex,
+                    handleOk(){
+                        if( that.activeIndex !== this.activeIndex){
+                            that.activeIndex = this.activeIndex
+                            that.$emit('business',that.businessList[that.activeIndex])
+                        }
+                    }
+                })
+            }
         }
     }
 </script>

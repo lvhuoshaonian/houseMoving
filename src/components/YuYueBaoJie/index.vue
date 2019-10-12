@@ -1,6 +1,6 @@
 <template>
     <div class="yuyuebaojie-container">
-        <OrderHead businessName="自如" :businessLogo="logo"/>
+        <OrderHead index="1" @business="business"/>
         <section class="order-confirm">
             <div class="order-confirm-container">
                 <div class="address-cell-wrapper border1">
@@ -32,7 +32,8 @@
                 <div class="van-cell border1">
                     <p class="van-cell-title">优惠劵</p>
                     <p class="van-cell-value">
-                        <span>- ￥10</span>
+                        <span v-if="businessInfo.youhui!==''">- ￥{{businessInfo.youhui}}</span>
+                        <span v-else class="wuyouhui" >暂无优惠减免</span>
                         <i class="iconfont iconxiangyou"></i>
                     </p>
                 </div>
@@ -40,7 +41,7 @@
                     <p class="amount-qian">
                         支付金额：
                         <span>￥</span>
-                        <span>620</span>
+                        <span>{{businessInfo.price}}</span>
                     </p>
                 </div>
             </div>
@@ -115,7 +116,12 @@
         },
         data(){
             return{
-                logo:require("../../assets/ziru-Logo.png"),
+                businessInfo:{
+                    businessName:'自如搬家',
+                    businessLogo:require("../../assets/ziru-Logo.png"),
+                    price:'96',
+                    youhui:''
+                },
                 jiesaoList:[
                     {
                         img:require("../../assets/img_renovation01.png"),
@@ -167,6 +173,12 @@
                     }
                 ]
 
+            }
+        },
+        methods:{
+            business(data){
+                this.businessInfo = data
+                console.log(data)
             }
         }
     }
@@ -278,8 +290,11 @@
         color: #969799;
     }
     .order-confirm-container .van-cell-value>span{
-        color: #fe615a!important;
+        color: #fe615a;
         padding-right: 5px;
+    }
+    .order-confirm-container .van-cell-value .wuyouhui{
+        color: #969799;
     }
     .order-confirm-container .order-amount{
         font-size: 13px;
