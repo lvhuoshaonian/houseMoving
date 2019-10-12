@@ -235,8 +235,9 @@
         font-size: 16px;
         font-weight: 700;
         white-space: nowrap;
-        animation: marquee 10s linear infinite;
+        animation: marquee 10s linear forwards;
         box-sizing: border-box;
+        /* animation-fill-mode: forwards; */
     }
     .address-cell-wrapper .address-cell-wrapper-item .blur-wrapper::before{
         position: absolute;
@@ -259,7 +260,7 @@
             text-indent: 0;
         }
         100% {
-            text-indent: -8.8em;
+            text-indent: -8.5em;
         }
     }
     .order-confirm-container .van-cell>p{

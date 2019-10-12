@@ -13,7 +13,7 @@
             </div>
             <div class="btn-content">
                 <a class="btn">
-                    <span>切换商家</span>
+                    <span @touchstart="switchBusiness()">切换商家</span>
                     <i class="iconfont icondown-trangle-copy-copy">
                     </i>
                 </a>
@@ -27,7 +27,16 @@
         name: "orderHeader",
         props:['businessName','businessLogo'],
         data(){
-            return{}
+            return{
+                business:{
+                    businessName:'',
+                    businessLogo:'',
+                    price:''
+                }
+            }
+        },
+        created(){
+
         }
     }
 </script>
