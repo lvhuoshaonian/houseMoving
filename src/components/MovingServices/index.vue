@@ -98,7 +98,7 @@
                     msg = '请输入搬到地址'
                     flag = false
                 }
-                if(!flag){
+                if(flag){
                     Toast(msg)
                 }else{
                     this.$router.push("/YuYueMoving")
@@ -111,10 +111,10 @@
 <style scoped>
     .info-wrapper{
         border-radius: .133333rem;
-        box-shadow: 0 0.106667rem 0.32rem 0 rgba(0,0,0,.08);
+        box-shadow: 0 0.1rem 0.32rem 0 rgba(0,0,0,.08);
         width: 100%;
-        height: 206px;
-        margin: .8rem auto .266667rem;
+        height: 4.01rem;
+        margin: .2rem auto .014rem;
         display: -webkit-box;
         display: -webkit-flex;
         display: flex;
@@ -129,25 +129,29 @@
         justify-content: center;
     }
     .info-wrapper .info-left .iconyuandian1{
-        height: 9px;
-        line-height: 9px;
+        height: .18rem;
+        line-height: .18rem;
         color: #E1E3EE;
+        font-size: .24rem;
     }
     .info-left .iconyuandian{
         color: #E1E3EE;
+        font-size: .24rem;
     }
     .info-left .iconzhengque{
         color:#229E56 ;
+        font-size: .24rem;
     }
     .info-right{
         flex: 1;
-        margin-right: 23px;
+        margin-right: .46rem;
     }
     .info-right .info-right__item>div{
         position: relative;
         width: 100%;
-        height: 68px;
-        line-height: 68px;
+        height: 1.36rem;
+        line-height: 1.36rem;
+        font-size: .32rem;
         text-align: left;
         color: #A4A4A6;
     }
@@ -159,20 +163,20 @@
     }
     .moving-footer{
         width: 100%;
-        margin-bottom: 23px;
+        margin-bottom: .46rem;
     }
     .moving-footer .btn{
         display: block;
         width: 100%;
-        height: 51px;
-        line-height: 51px;
+        height: 1rem;
+        line-height: 1rem;
         background-color: #239F57;
         color: #fff;
         font-weight: bold;
         border: none;
         outline: none;
-        border-radius: 14px;
-        font-size: 15px;
-        letter-spacing: 1px;
+        border-radius: .28rem;
+        font-size: .3rem;
+        letter-spacing: .02rem;
     }
 </style>

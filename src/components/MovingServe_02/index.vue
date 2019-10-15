@@ -75,50 +75,43 @@
 <style scoped>
     .moving-container{
         width: 100%;
-        margin: 32px 0;
+        margin: .64rem 0;
         overflow: auto;
     }
     .moving-title .moving-img img{
         width: 100%;
-        border-radius: 4px;
+        border-radius: .08rem;
+        height: 2.58rem;
     }
-    @media screen and (max-width:375px){
-        .moving-title .moving-img img{
-            height: 124px;
-        }
-    }
-    @media screen and (max-width:320px){
-        .moving-title .moving-img img{
-            height: 119px;
-        }
-    }
+
     .moving-section{
         width: 100%;
-        margin-top: 38px;
+        margin-top: .636rem;
     }
     .moving-section .section-title{
         width: 100%;
         text-align: left;
+        font-size: .4rem;
     }
     .moving-section .nav-list{
         display: flex;
         flex-direction: column;
     }
     .moving-section .nav-list ul{
-        margin: 10px 3px;
+        margin:.2rem .06rem;
     }
     .moving-section .nav-list li{
         display: flex;
         width: 100%;
-        height: 100px;
-        margin-bottom: 20px;
-        box-shadow: 0 0.32rem 0.5rem 0 rgba(0,0,0,.08);
+        height: 2rem;
+        margin-bottom: .4rem;
+        box-shadow: 0 0.13rem 0.15rem 0 rgba(0,0,0,.08);
         justify-content: center;
         align-items: center;
     }
     .moving-section .nav-list .nav-img{
-        width: 90px;
-        height: 60px;
+        width: .18rem;
+        height: .12rem;
     }
     .nav-list .nav-img img{
         width: 100%;
@@ -126,43 +119,31 @@
     }
     .nav-list .nav-detail{
         width: 56%;
-        padding-left:15px;
+        padding-left:.3rem;
     }
     .nav-list .nav-detail p{
         text-align: left;
-        font-size: 0.27rem;
+        font-size: .24rem;
         color: #101d37;
     }
     .nav-list .nav-detail p strong{
-        font-size: 1rem;
+        font-size: .28rem;
     }
     .nav-list .nav-detail .carSize{
         padding-left: 3px;
-        font-size: .05rem;
+        font-size: .24rem;
     }
     .nav-list .nav-detail .cardetail{
-        font-size: .27rem;
+        font-size: .24rem;
         margin-top: .12rem;
         color: #9399a5;
-
     }
-    @media screen and (max-width:375px){
-        .moving-section .nav-list .nav-img{
-            width: 80px;
-            height: 60px;
-        }
-    }
-    @media screen and (max-width:320px){
-        .moving-section .nav-list .nav-img{
-             width: 62px;
-             height: 52px;
-         }
-        .nav-list .nav-detail p strong{
-            font-size: 0.8rem;
-        }
+    .moving-section .nav-list .nav-img{
+            width: 1.6rem;
+            height: 1.2rem;
     }
     .nav-list .nav-icon i{
         color: #239F57;
-        font-size: 1rem;
+        font-size: .28rem;
     }
 </style>

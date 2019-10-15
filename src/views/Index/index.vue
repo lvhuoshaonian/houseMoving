@@ -75,7 +75,7 @@
 <style scoped>
     .house-moving{
         width: 100%;
-        margin: 32px 0;
+        margin: .64rem 0;
         overflow: auto;
     }
     .house-moving img{
@@ -85,17 +85,8 @@
         margin: 0 auto;
     }
     .header .header-title img{
-        border-radius: 4px;
-    }
-    @media screen and (max-width:375px){
-        .header .header-title img{
-            height: 124px;
-        }
-    }
-    @media screen and (max-width:320px){
-        .header .header-title img{
-            height: 119px;
-        }
+        border-radius:0.08rem;
+        height: 2.58rem;
     }
     .nav-list{
         display: flex;
@@ -103,28 +94,28 @@
     }
     .nav-list li{
         flex: 1;
+        font-size: .32rem;
     }
     .nav-list li>div{
-        width: 66px;
-        height: 66px;
-        margin: 24px auto 13px;
-        border-radius: 34px;
-
+        width: 1.32rem;
+        height: 1.32rem;
+        margin: .48rem auto .36rem;
+        border-radius: 0.68rem;
     }
     .nav-list li>p{
         text-align: center;
         font-weight: bold;
     }
     .nav-list  .banjia-icon img{
-        width: 51px;
-        height: 24px;
-        margin-top: 23px;
+        width: 1.02rem;
+        height: .48rem;
+        margin-top: .46rem;
     }
     .nav-list .baojie-icon img,
     .nav-list .kuandai-icon img {
-        width: 41px;
-        height: 36px;
-        margin-top: 18px;
+        width: .82rem;
+        height: .72rem;
+        margin-top: .36rem;
     }
     .nav-list li .banjia-icon{
         background:  linear-gradient(#E5F6FE,#F3F6FD);
@@ -137,64 +128,64 @@
     }
     .section-content{
         width: 100%;
-        margin-top: 21px;
+        margin-top: .4rem;
     }
     .section-content h2{
         text-align: left;
-        font-size: 20px;
+        font-size: .4rem;
         color: #10121E;
     }
     .section-content h2>span{
-        padding-left: 8px;
+        padding-left:.036rem;
         font-weight: normal;
-        font-size: 12px;
+        font-size: .24rem;
         color: #717075;
     }
     .section-nav-img{
         display: flex;
-        margin: 7px 0;
+        margin: .14rem 0;
     }
     .section-nav-img>div{
-        height: 202px;
+        height: 4.04rem;
         flex: 1;
         overflow: hidden;
     }
     .section-nav-img .banjia-img{
-        width: 183px;
-        height: 202px;
-        margin-right: 10px;
+        width: 3.66rem;
+        height: 4.04rem;
+        margin-right: .2rem;
         border-radius: 4px;
     }
     .section-nav-img .banjia-img img{
-        height: 202px;
+        height: 4.04rem;
     }
     .section-nav-img .baojie-img>a{
         display: block;
-        height: 95px;
-        border-radius: 4px;
+        height: 1.9rem;
+        border-radius: .08rem;
         overflow: hidden;
     }
     .section-nav-img .baojie-img img{
-        height: 95px;
+        height: 1.9rem;
     }
     .baojie-img .richangbaojie{
-        margin-bottom: 12px;
+        margin-bottom: .24rem;
     }
     .life-service .life-nav-img{
         display: flex;
-        margin-top: 8px;
+        margin-top: .16rem;
     }
     .life-service .life-nav-img>a{
         flex: 1;
-        height: 98px;
-        border-radius: 4px;
+        height: 1.96rem;
+        border-radius: .08rem;
         overflow: hidden;
     }
     .life-service .life-nav-img .weixiu{
-        margin-right: 15px;
+        margin-right: .3rem;
     }
     .life-service .life-nav-img img{
-        height: 98px;
+        height: 1.96rem;
     }
 
 </style>

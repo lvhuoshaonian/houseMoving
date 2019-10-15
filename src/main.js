@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './routers'
 
-
+import rem from '../public/libs/rem'
 import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
 Vue.use(Mint)
@@ -13,5 +13,6 @@ Vue.config.productionTip = false
 
 new Vue({
     router,
+    rem,
     render: h => h(App),
 }).$mount('#app')

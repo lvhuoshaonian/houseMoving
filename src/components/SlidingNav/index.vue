@@ -78,7 +78,7 @@
 <style scoped>
     .sliding-nav-container{
         width: 100%;
-        margin: 32px 0;
+        margin: .64rem 0;
         position: relative;
     }
     .sliding-nav-container .title-nav{
@@ -86,65 +86,55 @@
     }
     .title-nav .top-nav{
         flex: 1;
-        font-size: 14px;
-        letter-spacing: 1px;
+        font-size: .28rem;
+        letter-spacing: .02rem;
     }
     .title-nav .top-nav .active{
-        padding: 7px 16px;
+        padding: .14rem .32rem;
         background: #289D57;
         color:#fff;
-        border-radius: 16px;
+        border-radius: .32rem;
     }
     .swiper-warp{
         position: relative;
     }
     .swiper-warp .xiangyou,
     .swiper-warp .xiangzuo{
-        width: 7px;
+        width: .14rem;
         position: absolute;
         top: 50%;
         z-index: 24;
     }
     .swiper-warp .xiangyou{
-        right: 14px;
+        right: .28rem;
     }
     .swiper-warp >div i{
-        font-size: 25px;
+        font-size: .5rem;
         color: #259651;
     }
     .swiper-warp .xiangzuo{
-        left: 14px;
+        left: .24rem;
     }
     .swiper-img{
-        margin-top: 48px;
+        margin-top: .96rem;
     }
     .swiper-img img{
-        width: 104px;
-        height: 82px;
+        width: 2.08rem;
+        height: 1.24rem;
     }
     .swiper-warp .size{
-        font-size: 12px;
+        font-size: .24rem;
         color: #CDCDCD;
     }
     .swiper-warp .slide-title{
-        font-size: 19px;
+        font-size: .38rem;
         font-weight: bold;
-        margin:21px 0 11px;
+        margin:.42rem 0 .21rem;
     }
     .swiper-warp .slide-detail{
-        margin: 0 13px;
-        font-size: 15px;
+        margin: 0 .26rem;
+        font-size: .3rem;
         color: #B0B0B2;
-    }
-    @media screen and (max-width: 320px){
-        .swiper-warp .slide-title{
-            font-size: 16px;
-            font-weight: bold;
-            margin:17px 0 8px;
-        }
-        .swiper-warp .slide-detail{
-            font-size: 12px;
-        }
     }
 </style>
 <style>

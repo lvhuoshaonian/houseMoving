@@ -1,12 +1,12 @@
 <template>
     <div class="order-header-container">
-        <header class="order-details-supply">
-            <div class="price-supply">
+        <header class="order-details-header">
+            <div class="price-header-img">
                 <img :src="businessList[activeIndex].businessLogo" alt="">
             </div>
-            <div class="price-supply-content">
+            <div class="header-content">
                 <p>{{businessList[activeIndex].businessName}}</p>
-                <div class="van-rate">
+                <div>
                     <i v-for="item in 5" :key="item"
                        class="iconfont iconstar-award"></i>
                 </div>
@@ -77,65 +77,64 @@
 <style scoped>
     .order-header-container{
         width: 100%;
+        overflow: hidden;
     }
-    .order-details-supply{
+    .order-details-header{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 41px;
-        margin-bottom: 15px;
+        height: .82rem;
+        margin-bottom: .32rem;
     }
-    .order-details-supply .price-supply{
-        width: 35px;
-        height: 35px;
+    .order-details-header .price-header-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: .7rem;
+        height: .7rem;
+        border:  1px solid #c9ccd2;
+        border-radius: .08rem;
+        overflow: hidden;
     }
-    .order-details-supply .price-supply img{
-        width: 100%;
-        height: 100%;
-        border: .013rem solid #ececec;
+    .order-details-header .price-header-img >img{
+        width: .7rem;
+        height: .7rem;
     }
-    .order-details-supply .price-supply-content{
+    .order-details-header .header-content{
         flex: 1;
+        font-size: .28rem;
+        margin-left: .12rem;
         text-align: left;
-        margin-left: 11px;
     }
-    .order-details-supply .price-supply-content p{
+    .order-details-header .header-content p{
         font-weight: 700;
-        font-size: 1rem;
-        color: #101d37;
     }
-    .order-details-supply .price-supply-content i{
-        font-size: 1rem;
-        padding-right: 2px;
+    .order-details-header .header-content i{
+        font-size: .32rem;
         color: #FDD606;
     }
-    .order-details-supply .btn-content{
+    .order-details-header .btn-content{
         position: relative;
-        width: 78px;
-        height: 29px;
-        line-height: 28px;
-        color: #9399a5;
+        width: 76px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 12px;
     }
-    .move-to-item .move-type>span::before,
-    .order-details-supply .btn-content::before{
-        border: 1px solid #c9ccd2;
-        box-sizing: border-box;
+
+    .order-details-header .btn-content i{
+        vertical-align: middle;
+    }
+    .order-details-header .btn-content::before{
+        position: absolute;
         content: "";
-        -webkit-transform-origin: 0 0;
-        transform-origin: 0 0;
+        display: block;
         width: 200%;
         height: 200%;
-        -webkit-transform: scale(.5);
+        box-sizing: border-box;
+        transform-origin: 0 0;
         transform: scale(.5);
-        position: absolute;
-        left: 0;
-        top: 0;
         z-index: -1;
-    }
-    .order-details-supply .btn-content::before{
-        border-radius: 29px;
-    }
-    .btn-content .btn{
-        font-size: 12px;
+        border: 1px solid #c9ccd2;
+        border-radius: 28px;
     }
 </style>

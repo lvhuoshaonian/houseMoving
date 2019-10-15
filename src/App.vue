@@ -71,16 +71,17 @@
     }
     .footer-btn{
         width: 90%;
-        margin: 34px auto 15px;
-        height: 49px;
-        line-height: 49px;
+        margin: .68rem auto .3rem;
+        height: .98rem;
+        line-height: .98rem;
+        font-size: .32rem;
     }
     .footer-btn a{
         display: block;
         width: 100%;
         height: 100%;
         background-color: #239F57;
-        border-radius: 12px;
+        border-radius: .24rem;
         color: #fff;
         letter-spacing: 1px;
     }

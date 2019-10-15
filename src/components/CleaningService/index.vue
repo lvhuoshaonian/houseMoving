@@ -108,11 +108,11 @@
 
 <style scoped>
     .info-wrapper{
-        border-radius: .133333rem;
-        box-shadow: 0 0.106667rem 0.32rem 0 rgba(0,0,0,.08);
+        border-radius: .12rem;
+        box-shadow: 0 .1rem .22rem 0 rgba(0,0,0,.08);
         width: 100%;
-        height: 206px;
-        margin: .8rem auto .266667rem;
+        height: 4.01rem;
+        margin: .3rem auto .2rem;
         display: -webkit-box;
         display: -webkit-flex;
         display: flex;
@@ -125,6 +125,7 @@
         width: 18%;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     .info-wrapper .info-left .iconyuandian1{
         color: #E1E3EE;
@@ -137,37 +138,40 @@
     }
     .info-right{
         flex: 1;
-        margin-right: 23px;
+        margin-right: .46rem;
     }
     .info-right .info-right__item>div{
         position: relative;
+        display: flex;
+        align-items: center;
         width: 100%;
-        height: 68px;
-        line-height: 68px;
-        text-align: left;
+        height: 1.34rem;
         color: #A4A4A6;
     }
-    .info-right .info-right__item .banjia-end{
-        border-bottom:none;
+    .info-right .info-right__item>div >span{
+        flex: 1;
+        text-align: left;
+        font-size: .28rem;
     }
     .info-right .info-right__item .iconxiangyou{
-        float: right;
+        width: .4rem;
+        text-align: right;
     }
     .cleaning-footer{
         width: 100%;
-        margin-bottom: 23px;
+        margin-bottom: .46rem;
     }
     .cleaning-footer .btn{
         display: block;
         width: 100%;
-        height: 51px;
-        line-height: 51px;
+        height: 1rem;
+        line-height: 1rem;
         background-color: #239F57;
         color: #fff;
         font-weight: bold;
-        border-radius: 14px;
-        font-size: 15px;
-        letter-spacing: 1px;
+        border-radius: .28rem;
+        font-size: .3rem;
+        letter-spacing: .02rem;
         outline: none;
         border: none;
     }

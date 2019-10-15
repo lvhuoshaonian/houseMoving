@@ -209,7 +209,7 @@
                     businessName:'蓝犀牛搬家',
                     businessLogo:require("../../assets/lanxiniu.png"),
                     price:'89',
-                    youhui:'优惠卷减免￥10'
+                    youhui:'￥10'
                 },
                 jiesaoList:[
                     {
@@ -239,16 +239,16 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 15px auto;
+        margin: .3rem auto;
         overflow: hidden;
     }
     .details-container{
         width: 98%;
-        height: 246px;
+        height: 4.9rem;
         margin: 0 auto;
-        padding: 15px 0;
-        box-shadow: 0 0.2rem 0.7rem 0 rgba(0,0,0,.1);
-        border-radius: 6px;
+        padding: .3rem 0;
+        box-shadow:  0 0.1rem 0.32rem 0 rgba(0,0,0,.1);
+        border-radius: .12rem;
     }
     .details-container .details-info{
         width: 92%;
@@ -258,21 +258,21 @@
     }
     .details-info .move-to-container{
         position: relative;
-        padding-bottom: 1.6rem;
+        padding-bottom: .32rem;
     }
     .details-container .move-to-item{
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 0.8rem;
+        margin-top: .2rem;
     }
     .details-container .move-to-item>span,
     .details-container .move-to-item>h1{
         text-align: center;
     }
     .details-container .move-to-item>h1{
-        font-size: 18px;
+        font-size: .36rem;
     }
     .details-container .move-to-item>span:nth-child(1),
     .details-container .move-to-item .move-kaishi{
@@ -285,7 +285,7 @@
         text-align: right;
     }
     .details-container .move-to-item>span{
-        font-size: 12px;
+        font-size: .24rem;
         color: #9399a5;
     }
     .details-container .move-to-item .move-date{
@@ -293,32 +293,42 @@
     }
     .move-to-item .move-type{
         width: 40%;
-        margin: 0 7px;
+        margin: 0 .014rem;
         text-align: center;
-        font-size: 12px;
+        font-size: .24rem;
     }
     .move-to-item .move-type>span{
         position: relative;
         display: block;
-        width: 93px;
-        height: 23px;
-        line-height: 23px;
+        width: 1.86rem;
+        height: .46rem;
+        line-height: .44rem;
         margin: 0 auto;
     }
     .move-to-item .move-type >span::before{
-        border-radius: 23px;
+        position: absolute;
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        width: 200%;
+        height: 200%;
+        transform-origin: 0 0;
+        transform: scale(.5);
+        z-index: -1;
+        border: 1px solid #c9ccd2;
+        border-radius: .46rem;
     }
     .details-info .predict-cost{
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 15px;
+        margin-top: .3rem;
     }
     .details-info .predict-cost>div{
         width: 100%;
         display: flex;
-        margin-bottom: 22px;
-        font-size: 14px;
+        margin-bottom: .44rem;
+        font-size: .28rem;
         color: #000;
     }
     .details-info .predict-cost .order-font-2{
@@ -334,15 +344,15 @@
         color: #000;
     }
     .details-info .predict-cost .order-font-3 i{
-        font-size: 12px;
-        padding-left: 2px;
+        font-size: .24rem;
+        padding-left: .04rem;
     }
     .predict-cost .order-font-3 strong>span{
-        font-size: 14px;
+        font-size: .28rem;
         padding: 0 3px;
     }
     .predict-cost .order-font-3 strong{
-        font-size: 20px;
+        font-size: .4rem;
         color: #EE5248;
     }
     .remark-container{
@@ -352,14 +362,14 @@
     }
     .remark-container .details-list{
         width: 100%;
-        margin-top: 2rem;
+        margin-top: .6rem;
     }
     .details-list .remark-not-lock{
         display: flex;
     }
     .remark-container .order-font-1{
         text-align: left;
-        font-size: 16px;
+        font-size: .32rem;
         font-weight: bold;
     }
     .details-list .remark-not-lock .remark-title{
@@ -368,13 +378,13 @@
     }
     .details-list .remark-not-lock .colorgary{
         flex: 1;
-        font-size: 14px;
+        font-size: .28rem;
         text-align: right;
         color: #9399a5;
     }
     .details-list .remark-not-lock .colorgary i{
         font-size: 14px;
-        padding-left: 5px;
+        padding-left: .1rem;
     }
     .details-list .feiyong-list{
         width: 100%;
@@ -382,7 +392,7 @@
     .details-list .cost-details{
         text-align: left;
         width: 100%;
-        margin-top: 35px;
+        margin-top: .7rem;
     }
     .feiyong-list .cost-details-content{
         width: 100%;
@@ -393,40 +403,40 @@
     }
     .feiyong-list .cost-details-content>div:nth-child(1),
     .feiyong-list .cost-details-content>div:nth-child(2){
-        height: 49px;
-        line-height: 49px;
+        height: .98rem;
+        line-height: .98rem;
     }
     .remark-container .order-font-5{
         text-align: left;
         flex: 1;
-        font-size: 15px;
+        font-size: .3rem;
     }
     .cost-details-content .predict-cost-item.banyunfei{
         display: flex;
         flex-direction: column;
-        padding: 11px 0 9px;
+        padding: .22rem 0 .2rem;
     }
     .cost-details-content .predict-cost-item .predict-cost{
         display: flex;
     }
     .predict-cost-item .predict-cost-item-extend{
-        margin-top: 5px;
+        margin-top: .1rem;
         text-align: right;
-        font-size: 14px;
+        font-size: .28rem;
         color: #9399a5;
     }
     .cost-details-content .predict-cost-item-fees{
         width: 45%;
         text-align: right;
-        font-size: 13px;
+        font-size: .26rem;
     }
     .remark-container .order-font-3{
         text-align: right;
-        font-size: 13px;
+        font-size: .26rem;
         color: #9399a5;
     }
     .remark-container .order-font-4{
-        font-size: 13px;
+        font-size: .26rem;
         padding-left: 5px;
         color: #000;
     }
@@ -434,7 +444,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 23px auto;
+        margin: .46rem auto;
     }
     .details-list .extra-cost .extra-cost-title{
         text-align: left;
@@ -442,23 +452,23 @@
     .details-list .extra-cost>div{
         position: relative;
         display: flex;
-        height: 49px;
-        line-height: 49px;
+        height: .98rem;
+        line-height: .98rem;
     }
     .remark-container .bill-info{
         width: 100%;
-        margin: 35px 0;
+        margin: .7rem  0;
     }
     .bill-info .bill-tip{
         display: flex;
         width: 100%;
         color: #9399a5;
-        margin-top: 15px;
+        margin-top: .3rem;
     }
     .bill-info .bill-tip >span{
         flex: 1;
         text-align: left;
-        font-size: 13px;
+        font-size: .26rem;
     }
     .remark-container .evaluation{
         display: flex;
@@ -471,14 +481,14 @@
     .evaluation .evaluation-title{
         display: flex;
         align-items: center;
-        margin-bottom: 17px;
+        margin-bottom: .34rem;
     }
     .evaluation .evaluation-title>span{
         flex: 1;
     }
     .evaluation .evaluation-title .order-font-2{
         text-align: right;
-        font-size: 13px;
+        font-size: .26rem;
     }
     .evaluation .evaluation-title .proportion{
         color: #fe615a;
@@ -486,12 +496,12 @@
     .evaluation .evaluation-tags{
         width: 100%;
         text-align: left;
-        margin-bottom: 20px;
+        margin-bottom: .4rem;
     }
     .evaluation .evaluation-tags .comment-tag{
-        font-size: 12px;
-        padding: 3px 5px;
-        margin-right: 5px;
+        font-size: .24rem;
+        padding: .06rem .1rem;
+        margin-right: .1rem;
         background-color: rgb(255, 249, 218);
     }
     .evaluation .estimate-container>div{
@@ -499,10 +509,10 @@
         width: 100%;
     }
     .evaluation .estimate-container .estimate-item{
-        margin: 5px 0 10px;
+        margin: .1rem 0 .2rem;
     }
     .estimate-container .estimate-item .user-info{
-        font-size: 16px;
+        font-size: .28rem;
         font-weight: bold;
     }
     .estimate-container .estimate-rate .rate-disabled,
@@ -514,7 +524,7 @@
     }
     .estimate-container .estimate-rate .rate-disabled i{
         color: rgb(255, 218, 0);
-        font-size: 14px;
+        font-size: .28rem;
     }
     .estimate-container .estimate-rate .estimate-time{
         font-size: 12px;
@@ -522,42 +532,42 @@
         color: #9399a5;
     }
     .estimate-container .estimate-content{
-        margin: 8px 0;
-        font-size: 14px;
+        margin: .16rem 0;
+        font-size: .28rem;
         color: #101d37;
     }
     .estimate-container .estimate-btn {
-        margin-top: 15px;
+        margin-top: .3rem;
     }
     .estimate-container .estimate-btn .life-button-text{
         display: block;
-        width: 116px;
-        height: 36px;
-        line-height: 36px;
+        width: 2.32rem;
+        height: .72rem;
+        line-height: .72rem;
         margin: 0 auto;
-        font-size: 14px;
+        font-size: .28rem;
         font-weight: bold;
         color: #101d37;
         background-color: #F8F8FA;
-        border-radius: 6px;
+        border-radius: .12rem;
         text-align: center;
     }
     .remark-container .explain{
         width: 100%;
     }
     .remark-container .explain .explain-title{
-        margin-bottom: 10px;
+        margin-bottom: .2rem;
     }
     .remark-container .explain .explain-content{
         color: #9399a5;
     }
     .remark-container .explain .explain-content>p{
         text-align: left;
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 0.28rem;
+        line-height: .44rem;
     }
     .remark-container .explain .explain-content .protocol{
-        margin-top: 17px;
-        font-size: 12px;
+        margin-top: .34rem;
+        font-size: .24rem;
     }
 </style>

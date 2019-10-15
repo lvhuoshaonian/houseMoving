@@ -188,7 +188,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 15px auto;
+        margin: .3rem auto;
     }
     .yuyuebaojie-container .order-confirm{
         display: flex;
@@ -197,39 +197,42 @@
     }
     .order-confirm .order-confirm-container{
         position: relative;
-        padding:0 17px 13px;
+        padding:0 .34rem .26rem;
         box-shadow: 0 0.2rem 0.7rem 0 rgba(0,0,0,.1);
-        border-radius: 6px;
+        border-radius: .12rem;
     }
     .order-confirm-container>div{
         position: relative;
         display: flex;
         align-items: center;
-        height: 45px;
-        padding: 16px 0;
+        height: .9rem;
+        padding: .32rem 0;
     }
     .order-confirm-container::after{
         content: "";
         position: absolute;
         width: 100%;
-        height: .39rem;
+        height: 1.1rem;
         left: 0;
-        bottom: -.15rem;
+        bottom: -.99rem;
         background-image: url("../../assets/img-order-dot.png");
         background-repeat: no-repeat;
         background-size: contain;
     }
     .address-cell-wrapper .image-wrapper{
-        width: 22px;
-        height: 22px;
-        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: .44rem;
+        height:  .44rem;
     }
     .address-cell-wrapper .image-wrapper img{
         width: 100%;
         height: 100%;
     }
     .address-cell-wrapper .address-cell-wrapper-item{
-        margin: 0 6px;
+        flex: 1;
+        margin: 0 .12rem;
     }
     .address-cell-wrapper .address-cell-wrapper-item {
         text-align: left;
@@ -237,13 +240,14 @@
         overflow: hidden;
     }
     .address-cell-wrapper .address-cell-wrapper-item .double{
+        font-size: .32rem;
         color: #101d37;
         font-weight: 400;
     }
     .address-cell-wrapper .address-cell-wrapper-item .blur-wrapper{
         position: relative;
         width: 100%;
-        font-size: 16px;
+        font-size: .32rem;
         font-weight: 700;
         white-space: nowrap;
         animation: marquee 10s linear forwards;
@@ -260,12 +264,6 @@
         left: 1px;
         background: linear-gradient(to left,rgba(250,250,250,0),rgba(250,250,250,1));
     }
-    @media screen and (max-width: 320px){
-        .address-cell-wrapper .address-cell-wrapper-item,
-        .address-cell-wrapper .address-cell-wrapper-item .blur-wrapper{
-            font-size: 14px;
-        }
-    }
     @keyframes marquee {
         0% {
             text-indent: 0;
@@ -274,47 +272,53 @@
             text-indent: -8.5em;
         }
     }
+    .address-cell-wrapper .van-icon {
+        display: flex;
+        align-items: center;
+        width: .4rem;
+        height: .9rem;
+    }
     .order-confirm-container .van-cell>p{
         flex: 1;
     }
     .order-confirm-container .van-cell-title{
         text-align: left;
-        font-size: 15px;
+        font-size: .3rem;
         color: #101d37;
         font-weight: 700;
     }
     .order-confirm-container .van-cell-value{
         text-align: right;
-        font-size: 13px;
         color: #969799;
+        font-size: .3rem;
     }
     .order-confirm-container .van-cell-value>span{
         color: #fe615a;
-        padding-right: 5px;
+        padding-right: .1rem;
     }
     .order-confirm-container .van-cell-value .wuyouhui{
         color: #969799;
     }
     .order-confirm-container .order-amount{
-        font-size: 13px;
+        font-size: .34rem;
     }
     .order-confirm-container .order-amount>p{
         width: 100%;
         text-align: right;
-        font-size: 14px;
+        font-size: .28rem;
     }
     .order-amount .amount-qian >span{
         color: #fe615a;
     }
     .order-amount .amount-qian >span:nth-child(2){
-        font-size: 20px;
+        font-size: .4rem;
     }
     .order-confirm .order-remark{
-        margin: 34px 0;
+        margin: .68rem 0;
     }
     .order-confirm .title{
-        margin-bottom: 14px;
-        font-size: 16px;
+        margin-bottom: .28rem;
+        font-size: .34rem;
         text-align: left;
         font-weight: bold;
     }
@@ -322,12 +326,12 @@
         border: none;
         outline: none;
         background: #f8f8f9;
-        border-radius: .39rem;
+        border-radius: .12rem;
         box-sizing: border-box;
         width: 100%;
-        height: 7.1rem;
-        padding: 1rem 1.2rem;
-        font-size: 1rem;
+        height: 2.1rem ;
+        padding: .18rem .2rem;
+        font-size: .28rem;
     }
     .estimate-wrap .estimate-list{
         display: flex;
@@ -335,26 +339,26 @@
         overflow-y: hidden;
     }
     .order-confirm .estimate-wrap{
-        margin-top: 31px;
+        margin-top: .62rem;
     }
     .estimate-wrap .estimate-item{
-        padding:0  0 19px 13px;
+        padding:0  0 .38rem .32rem;
         background: #fff;
-        box-shadow: 0 0.2rem 0.7rem 0 rgba(0,0,0,.07);
-        border-radius: 5px;
-        margin: 8px 8px;
+        box-shadow: 0 .04rem .08rem 0 rgba(0,0,0,.07);
+        border-radius: .1rem;
+        margin: .16rem;
     }
     .estimate-item .user{
-        margin-top: 9px;
+        margin-top: .18rem;
         text-align: left;
-        font-size: 16px;
+        font-size: .32rem;
         font-weight: bold;
         color: #101d37;
     }
     .estimate-item .van-rate{
         text-align: left;
-        font-size: 10px;
-        margin: 5px 0 8px;
+        font-size: .24rem;
+        margin: .1rem 0 .16rem;
         color: #E6E400;
     }
     .estimate-item .img-list{
@@ -362,39 +366,39 @@
         width: 100%;
     }
     .estimate-item .img-list img{
-        margin-right: 13px;
-        width: 69px;
-        height: 64px;
+        margin-right: .26rem;
+        width: 1.38rem;
+        height: 1.24rem;
     }
     .estimate-item .label{
-        margin-top: 8px;
+        margin-top: .16rem;
         text-align: left;
     }
     .estimate-item .label img{
-        width: 10px;
-        height: 9px;
+        width: .2rem;
+        height: .18rem;
     }
     .estimate-item .des{
         text-align: left;
-        font-size: 13px;
-        line-height: 18px;
+        font-size: .16rem;
+        line-height: .36rem;
         color: #9399a5;
     }
     .order-confirm .explain{
-        margin-top: 31px;
+        margin-top: .6rem;
     }
     .explain .explain-content{
-        font-size: 14px;
+        font-size: .28rem;
         text-align: left;
         color: #9399a5;
     }
     .explain .explain-content>p{
-        line-height: 23px;
+        line-height: .46rem;
     }
     .explain .explain-content .protocol{
-        margin-top: 10px;
+        margin-top: .1rem;
     }
     .explain .explain-content .protocol>a{
-        font-size: 14px;
+        font-size: .28rem;
     }
 </style>

@@ -45,7 +45,7 @@
 <style scoped>
     .service-guarantee{
         width: 100%;
-        margin-top: 27px;
+        margin-top: .5rem;
     }
     .service-guarantee .title{
         width: auto;
@@ -56,33 +56,33 @@
         justify-content: center;
     }
     .icon-left,.icon-right{
-        padding-top: 1px;
+        padding-top: .02rem;
     }
     .service-guarantee .title i{
         display: block;
-        font-size: 12px;
-        height: 3px;
+        font-size: .24rem;
+        height: .06rem;
         color: #EEEEEE;
     }
     .service-guarantee .title-info{
-        margin: 0 5px;
-        font-size: 15px;
+        margin: 0 .1rem;
+        font-size: .3rem;
         font-weight: 400;
         color: #BEBEBE;
     }
     .service-guarantee .title-icon{
         display: flex;
-        margin:21px 0 16px;
+        margin:.4rem 0 .34rem;
     }
     .service-guarantee .title-icon >div{
         flex: 1;
     }
     .service-guarantee .title-icon img{
-        width: 32px;
-        height: 32px;
+        width: .64rem;
+        height: .64rem;
     }
     .service-guarantee .title-icon p{
-        font-size: 12px;
+        font-size: .24rem;
         color: #9399a5;
     }
 </style>

@@ -24,8 +24,8 @@
         overflow: hidden;
     }
     .business-services .title{
-        margin-bottom: 14px;
-        font-size: 16px;
+        margin-bottom: .28rem;
+        font-size: .32rem;
         text-align: left;
         font-weight: bold;
     }
@@ -37,24 +37,24 @@
     .business-services .content >section{
         display: flex;
         flex-direction: column;
-        margin-right: 1rem;
+        margin-right: .32rem;
     }
     .business-services .content >section>img{
-        width: 158px;
-        height: 120px;
+        width: 3.16rem;
+        height: 2.4rem;
     }
     .business-services .content >section{
         text-align: left;
     }
     .business-services .content >section>p{
         color: #101d37;
-        font-size: 14px;
+        font-size: .28rem;
         font-weight: bold;
-        padding: 5px 0;
+        padding: .1rem 0;
     }
     .business-services .content >section>span{
         color: #9399a5;
-        font-size: 13px;
-        line-height: 19px;
+        font-size: .26rem;
+        line-height: .38rem;
     }
 </style>

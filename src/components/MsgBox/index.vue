@@ -62,16 +62,15 @@ export default {
         background: rgba(0,0,0,.5);
     }
     .business-container .business-list .Cancel{
-
-        margin: 0.7rem auto 0;
+        margin: 0.2rem auto 0;
         text-align: right;
     }
     .business-container .Cancel i{
         color: #9399a5;
-        font-size: 18px;
+        font-size: .36rem;
     }
     .business-container .business-list >h2{
-        font-size: 18px;
+        font-size: .36rem;
         font-weight: normal;
     }
     .business-container .business-list >h2,
@@ -80,20 +79,21 @@ export default {
         margin: 0 auto;
     }
     .business-container .business-list{
-        width: 86%;
-        height: 50%;
+        width: 90%;
+        height: 5.9rem;
         background: white;
-        border-radius: 0.4rem;
+        border-radius: .12rem;
+        font-size: .28rem;
     }
     .business-container .business-list .dangqian{
-        margin-bottom: 1rem;
+        margin-bottom: .14rem;
     }
     .business-container .business-list .dangqian,
     .business-container .business-list .qita{
         position: relative;
         display: flex;
         align-items: center;
-        padding: 0.7rem 0;
+        padding: .2rem 0;
     }
     .business-container .business-list .qita:not(:last-child)::after{
         position: absolute;
@@ -112,8 +112,8 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 2.6rem;
-        height: 2.6rem;
+        width: .8rem;
+        height: .8rem;
         border: .013rem solid #ececec;
         overflow: hidden;
     }
@@ -123,19 +123,20 @@ export default {
     }
     .business-list .business-name {
         width: 49%;
-        padding-left: 0.3rem;
-        font-size: 14px;
+        padding-left: .1rem;
+        font-size: .28rem;
     }
     .business-list .price-youhui{
         width: 40%;
-        margin-right: 0.3rem;
+        margin-right: .1rem;
         text-align: right;
     }
     .business-list .price-youhui .price{
+        font-size: .32rem;
         color: #fe615a;
     }
     .business-list .price-youhui .youhui{
-        font-size: 12px;
+        font-size: .24rem;
         color: #9399a5;
     }
     .business-list .iconxiangyou{
