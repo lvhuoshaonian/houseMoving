@@ -1,6 +1,6 @@
 <template>
     <div class="business-container">
-        <div class="business-list">
+        <div class="business-list" :class="{'donghua':animFlag}">
             <div class="Cancel">
                 <i class="iconfont iconX"  @touchstart="handleCancel()"></i>
             </div>
@@ -84,6 +84,27 @@ export default {
         background: white;
         border-radius: .12rem;
         font-size: .28rem;
+
+        animation: .3s Boxanima;
+    }
+    .business-container .donghua{
+        animation: .1s Boxanima1 ;
+    }
+    @keyframes Boxanima {
+        0%{
+            transform: scale(.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+    @keyframes Boxanima1 {
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0);
+        }
     }
     .business-container .business-list .dangqian{
         margin-bottom: .14rem;
