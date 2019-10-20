@@ -126,11 +126,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: .04rem;
     }
     .info-wrapper .info-left .iconyuandian1{
+        font-size: 0.30rem;
         color: #E1E3EE;
     }
     .info-left i{
+        font-size: 0.32rem;
         color: #E1E3EE;
     }
     .info-left .zhengque{
