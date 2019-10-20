@@ -28,6 +28,11 @@ export default new Router({
                 import ('@/components/CleaningService')
         },
         {
+            path: '/kuandai',
+            component: () =>
+                import ('@/components/Kuandai')
+        },
+        {
             path: '/YuYueMoving',
             component: () =>
                 import ('@/components/YuYueMoving')

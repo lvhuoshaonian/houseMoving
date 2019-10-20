@@ -1,5 +1,5 @@
 <template>
-    <div class="service-guarantee">
+    <div id="content" class="service-guarantee">
         <div class="title">
             <span class="icon-left">
                 <i class="iconfont iconhengxian-"></i>
@@ -44,7 +44,6 @@
 
 <style scoped>
     .service-guarantee{
-        width: 100%;
         margin-top: .5rem;
     }
     .service-guarantee .title{

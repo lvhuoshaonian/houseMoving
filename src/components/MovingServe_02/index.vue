@@ -1,5 +1,5 @@
 <template>
-    <div class="moving-container">
+    <div id="content" class="moving-container">
         <header class="moving-title">
             <div class="moving-img">
                 <img src="../../assets/title.jpg" alt="">
@@ -74,7 +74,6 @@
 
 <style scoped>
     .moving-container{
-        width: 100%;
         margin: .64rem 0;
         overflow: auto;
     }

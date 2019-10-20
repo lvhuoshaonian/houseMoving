@@ -20,7 +20,6 @@
 
 <style scoped>
     .business-services{
-        width: 100%;
         overflow: hidden;
     }
     .business-services .title{

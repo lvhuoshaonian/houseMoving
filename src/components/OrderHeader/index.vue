@@ -76,7 +76,6 @@
 
 <style scoped>
     .order-header-container{
-        width: 100%;
         overflow: hidden;
     }
     .order-details-header{

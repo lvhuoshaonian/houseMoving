@@ -1,5 +1,5 @@
 <template>
-    <div class="house-moving">
+    <div id="content" class="house-moving">
         <header class="header">
             <div class="header-title">
                 <img src="../../assets/title.jpg" alt="">
@@ -19,7 +19,7 @@
                         </div>
                         <p>保洁</p>
                     </router-link>
-                    <router-link to="/" tag="li">
+                    <router-link to="/kuandai" tag="li">
                         <div class="kuandai-icon">
                             <img src="../../assets/kuaidai-icon.png" alt="">
                         </div>
@@ -74,7 +74,6 @@
 
 <style scoped>
     .house-moving{
-        width: 100%;
         margin: .64rem 0;
         overflow: auto;
     }

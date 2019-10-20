@@ -1,5 +1,5 @@
 <template>
-    <div class="yuyuebaojie-container">
+    <div id="content" class="yuyuebaojie-container">
         <OrderHead index="1" @business="business"/>
         <section class="order-confirm">
             <div class="order-confirm-container">
@@ -187,8 +187,6 @@
     .yuyuebaojie-container{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin: .3rem auto;
     }
     .yuyuebaojie-container .order-confirm{
         display: flex;

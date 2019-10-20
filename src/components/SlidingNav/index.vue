@@ -11,7 +11,6 @@
                 <a @touchstart ="toPer()">
                     <i class="iconfont iconzuo1" ></i>
                 </a>
-
             </div>
             <div v-if="nowIndex  > 0" class="xiangzuo">
                 <a @touchstart ="toNext()">
@@ -62,6 +61,7 @@
                 this.mySwiper.slideTo(this.nowIndex,300,false)
             }
         },
+        /* eslint-disable */
         mounted() {
             let that = this
             that.mySwiper = new Swiper('.swiper-container',{
@@ -77,7 +77,6 @@
 
 <style scoped>
     .sliding-nav-container{
-        width: 100%;
         margin: .64rem 0;
         position: relative;
     }

@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <div class="app-content">
+        <div class="content">
             <router-view>
             </router-view>
         </div>
@@ -28,6 +28,9 @@
         -khtml-user-select: none; /*早期浏览器*/
         user-select: none;
     }
+    body{
+        font-size: 12px;
+    }
     ul,li{
         list-style: none;
     }
@@ -47,9 +50,9 @@
         text-align: center;
         color: #2c3e50;
     }
-    .app-content{
+    #content{
         width: 89%;
-        margin: 0 auto;
+        margin: .3rem auto;
     }
     .clearFix:after{
         content: "";

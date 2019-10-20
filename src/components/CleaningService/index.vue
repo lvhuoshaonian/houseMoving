@@ -1,5 +1,5 @@
 <template>
-    <div class="cleaning-container">
+    <div id="content" class="cleaning-container">
         <SlidingNav :navList="navList"/>
         <section class="info-wrapper">
             <div class="info-left">

@@ -1,5 +1,5 @@
 <template>
-    <div class="van-pull-refresh">
+    <div id="content" class="van-pull-refresh">
         <OrderHead index="0" @business="business"/>
         <section class="details-container">
             <div class="details-info">
@@ -238,8 +238,6 @@
     .van-pull-refresh{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin: .3rem auto;
         overflow: hidden;
     }
     .details-container{
