@@ -23,6 +23,7 @@
                 </p>
             </div>
             <h2 >其他服务商</h2>
+            <!-- eslint-disable-next-line -->
             <div v-if="parseInt(activeIndex) !== index" v-for="(item,index) in list"
                  :key="index" class="qita" @touchstart="handleOk(index)">
                 <div class="business-logo">

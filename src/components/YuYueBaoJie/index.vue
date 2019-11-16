@@ -356,7 +356,7 @@
     .estimate-item .van-rate{
         text-align: left;
         font-size: .24rem;
-        margin: .1rem 0 .16rem;
+        margin-bottom:  .16rem;
         color: #E6E400;
     }
     .estimate-item .img-list{

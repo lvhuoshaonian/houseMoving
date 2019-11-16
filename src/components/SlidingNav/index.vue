@@ -3,7 +3,7 @@
         <div class="title-nav">
             <div class="top-nav" v-for="(item,index) in navList" :key="item.type">
                 <span :class="{active:nowIndex=== index}"
-                      @touchstart ="liseGo(index)">{{item.type}}</span>
+                    @touchstart ="liseGo(index)">{{item.type}}</span>
             </div>
         </div>
         <div class="swiper-warp">
